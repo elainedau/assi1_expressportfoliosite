@@ -1,0 +1,72 @@
+<!-- 
+    File Name: contact.ejs
+    Student Name: Yee Ling Yuen
+    Student ID: 301315346
+    Date:   09-26-2023
+ -->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+    <!--<img src="img/logo.png" alt="logo">-->
+
+<main class="ontainer">
+<div class="jumbotron">
+    <section id="contact">
+        <div>
+            <!--my contact-->
+            <h1 class="text-center">Contact Me</h1>
+
+            <div>
+                <div>
+                    <div>
+                        <h3>Contact Information</h3>
+                        <hr>
+                        <p> MAIL: yyuen11@my.centennialcollege.ca</p>
+                        <p> PHONE: (437)970-1234</p>
+                        <a class="connect" href="mailto:yyuen11@my.centennialcollege.ca" class="contact-btn">Connect Elaine</a>
+                        <hr>
+                    </div>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend style="font-size: 25px;"> <b>Tell me about yourself</b></legend>
+                          <form action = "/contact" method = "post">
+                            <p><label for="myFName">*First Name:</label>
+                            <input type="text" name="myFName" id="myFName" required="required" size="35"></p>
+                            <br>
+                            <p><label for="myLName">Last Name:</label>
+                            <input type="text" name="myLName" id="myLName" size="35"></p>
+                            <br>
+                            <p><label for="myPhone">Phone:</label>
+                            <input type="tel" name="myPhone" id="myPhone" maxlength="12" size="42" placeholder="+# (###) ###-####"></p>
+                            <br>
+                            <p><label for="myEmail">*E-mail:</label>
+                            <input type="email" name="myEmail" id="myEmail" required="required" size="40" placeholder="name@domain.com"></p>
+                            <br>
+                        
+                            <label for="CommentsMessage">Comments / Message:</label>
+                            <br>
+                            <textarea name="myComments" id="myComments" rows="10" cols="75" 
+                            placeholder="Hi Elaine, I'm interested in your portfolio."></textarea>
+                            <br><br>
+                            <p style="font-size:10px; color: #000000">Required fields are marked with an asterisk *</p>
+                            <input type="submit" id="submit" value="Submit">
+                          </form>
+                      </fieldset>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+</main>
+
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+
+
+
+   

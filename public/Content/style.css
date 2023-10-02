@@ -1,0 +1,20 @@
+/* 
+    File Name: style.css
+    Student Name: Yee Ling Yuen
+    Student ID: 301315346
+    Date:   09-30-2023
+*/
+
+h3.fieldset {
+    color:#113964;
+}
+
+
+fieldset {
+    border-style:solid;
+	border-radius:15px;
+	margin-bottom:20px;
+	width: 80%;
+	padding: 3%;
+}
+
